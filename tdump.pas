@@ -120,9 +120,9 @@ begin
         Exit;
       end;
       
-      if CountValue < 1 then
+      if (CountValue < 1) or (CountValue > 1024) then
       begin
-        ShowError('Count must be at least 1');
+        ShowError('Count must be from 1 to 1024');
         Result := False;
         Exit;
       end;
@@ -516,7 +516,7 @@ begin
   WriteLn('Usage: tdump [options] [filename]');
   WriteLn;
   WriteLn('Options:');
-  WriteLn('  -c, --count N     Number of bytes to display per line (default: 16)');
+  WriteLn('  -c, --count N     Number of bytes to display per line, from 1 to 1024 (default: 16)');
   WriteLn('  -w, --word        Group output as 16-bit words (4 hex digits per group)');
   WriteLn('  -d, --dword       Group output as 32-bit dwords (8 hex digits per group)');
   WriteLn('  -v, --verbose     Display file information header and footer');
