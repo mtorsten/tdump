@@ -1,0 +1,43 @@
+# Compiled binaries
+tdump
+test_tdump
+test_integration
+
+# Free Pascal compiler files
+*.o
+*.ppu
+*.compiled
+*.or
+*.a
+*.so
+*.dylib
+*.dll
+
+# Backup files
+*.bak
+*~
+*.tmp
+
+# Test artifacts
+test_*.bin
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Build artifacts
+build/
+dist/
+*.exe
